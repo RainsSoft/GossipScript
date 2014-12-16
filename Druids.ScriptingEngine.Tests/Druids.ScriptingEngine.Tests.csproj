@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FEC672E6-D34F-4969-9B28-6BD450DBB2A7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JRPG.ScriptingEngine.Tests</RootNamespace>
+    <AssemblyName>JRPG.ScriptingEngine.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CompilerTests.cs" />
+    <Compile Include="ConditionalTests.cs" />
+    <Compile Include="ApiTests.cs" />
+    <Compile Include="ControlFlowTests.cs" />
+    <Compile Include="ErrorCodesTests.cs" />
+    <Compile Include="Module\CustomEventParameters.cs" />
+    <Compile Include="TODONewFeatureTests.cs" />
+    <Compile Include="ScriptNodeTests.cs" />
+    <Compile Include="ExpressionNormalizerTests.cs" />
+    <Compile Include="ExpressionTests.cs" />
+    <Compile Include="Module\Account.cs" />
+    <Compile Include="Module\CustomActionNode.cs" />
+    <Compile Include="Module\CustomActionNode2.cs" />
+    <Compile Include="Module\CustomActionNode3.cs" />
+    <Compile Include="Module\Customer.cs" />
+    <Compile Include="PerformanceTests.cs" />
+    <Compile Include="StateMachineTests.cs" />
+    <Compile Include="StringTests.cs" />
+    <Compile Include="TestHelper.cs" />
+    <Compile Include="TokenizerTests.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\testscript001.txt" />
+    <EmbeddedResource Include="Resources\testscript002.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Druids.ScriptingEngine\Druids.ScriptingEngine.csproj">
+      <Project>{2A82E81C-F15E-4560-8A21-B52A06D6D8A0}</Project>
+      <Name>Druids.ScriptingEngine</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\testscript_parallel.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

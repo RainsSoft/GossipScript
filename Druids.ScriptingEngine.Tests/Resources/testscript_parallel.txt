@@ -1,0 +1,31 @@
+﻿@p1
+{
+	dialog.Say("start");
+
+	parallel
+	{
+		dialog.Say("p1");
+		system.Wait(100);
+		dialog.Say("p2");
+		system.Wait(100);
+		dialog.Say("p3");
+		system.Wait(100);
+		dialog.Say("p4");
+		system.Wait(100);
+	}
+	
+	dialog.Say("jump");
+	system.Wait(100);
+	dialog.Say("jump");
+	system.Wait(100);
+	
+	parallel
+	{
+		dialog.Say("p3");
+		system.Wait(100);
+		dialog.Say("p4");
+		system.Wait(100);
+	}
+
+	dialog.Say("end");
+}

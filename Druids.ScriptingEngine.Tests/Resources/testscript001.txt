@@ -1,0 +1,29 @@
+﻿@p1
+{
+	dialog.Say("Hello, don't get too many travellers around these parts.");
+	system.Wait(500);
+	dialog.AddResponse("nat", "Which way to " + "town", "p2");
+	dialog.AddResponse("nat", "Ask about haircut", "p3");
+	dialog.AddResponse("nat", "Ask about Lord Nelson, here is some long text that should probably word wrap let's see if we can make it do that shall we?", "p4");
+	dialog.AddResponse("nat", "Bye! [end]","-1");
+}
+
+@p2
+{
+	dialog.Say("The town is north of here.");
+	dialog.Interject("ant", "you are dumb");
+	dialog.Interject("oct", "Ant! Don't be mean!");
+	dialog.GotoLabel("p1");
+}
+
+@p3
+{
+	dialog.Say("It's the talk of the town.");
+	dialog.GotoLabel("p1");
+}
+
+@p4
+{
+	dialog.Say("poo.");
+	dialog.GotoLabel("p1");
+}

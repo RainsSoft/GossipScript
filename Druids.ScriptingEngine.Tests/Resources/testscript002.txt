@@ -1,0 +1,47 @@
+﻿Chenoa
+
+@p1
+{
+	dialog.Say("Greeto travellers, tis a wicked storm outside, you’d be wise to stay here till it passes. 8 gold coins a night for the four of you.");
+
+	dialog.AddResponse("Ant", "You have very nice hair. If I make you dinner can I sleep in your bed for free?", "p2");
+	dialog.AddResponse("Oct", "Can we have a free room if I play some songs to entertain the customers?", "p3");
+}
+
+@p2
+{
+	dialog.Say("Um, ah, we've only just met so that's a definite no sorry honey. But if you all want free accommodation and to earn some extra gold coin you could clear the mongau out of the basement for me.");
+
+	dialog.AddResponse("Wrath", "Mongau? They shall feel my wrath or my name is not Wrathiel!", "p4");
+	dialog.AddResponse("Oct", "Mongau? How did they end up in your basement?", "p4");
+}
+
+@p3
+{
+	dialog.Say("We have only one other customer and he pretty much entertains himself. However, if you would like to stay for free and earn yourselves some extra gold you could clear the infestation of monger out of the basement for me.  What do you say?");
+
+	dialog.AddResponse("Wrath", "Mongau? They shall feel my wrath or my name is not Wrathiel!", "p4");
+	dialog.AddResponse("Oct", "Mongau? How did they end up in your basement?", "p4");
+}
+
+@p4
+{
+	dialog.Say("Ok, well we had a rat infestation so I released snakes in the basement to kill them, but then we had a snake infestation so I released a few Mongau to kill the snakes, and now they’re out of control!");
+	dialog.Say("Stealing from the till and keeping the customers up all night.  I should have just hired adventurers to kill the rats, but it seemed a bit too cliche at the time.");
+
+	dialog.AddResponse("Oct", "Sure, we’ll get rid of the Mongau. How much is the reward?", "p5");
+	dialog.AddResponse("Wrath", "We shall slay the Mongau and all who stand in our way! Ah ha ha hah haaaaa!", "p5");
+	dialog.AddResponse("Ant", "Why can't humans and Mongau live in harmony with flowers and bunnies?  We'll try to help find a solution that preserves natures balance.", "p5");
+	dialog.AddResponse("Nat", "I'm not helping you!  If you had half a brain you would have made sure your food was properly stored and it wouldn't've attracted vermin.  Let us stay or I'll turn your eyeballs into weasels and let them eat your brain.", "p6");
+}
+
+@p5
+{
+	dialog.Say("The reward is 500gc.  Head through the door to the south then take the stairs on your west.  I mean left.  Left if you're facing south that is.  Here is the KEY to the stairwell door.  Good luck, and let me know if you need anything.");	
+}
+
+@p6
+{
+	dialog.Interject("Oct", "Nathanialio! Don't be such a gnu!  It won't take us long to help out.  We'll do it Chenoa.  How much is the reward?");
+	dialog.GotoLabel("p5");
+}

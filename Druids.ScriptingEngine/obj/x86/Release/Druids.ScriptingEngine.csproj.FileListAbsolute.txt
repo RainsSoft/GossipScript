@@ -1,0 +1,12 @@
+C:\repositories\Druids\Game\Druids.ScriptingEngine\bin\x86\Release\Druids.ScriptingEngine.dll
+C:\repositories\Druids\Game\Druids.ScriptingEngine\bin\x86\Release\Druids.ScriptingEngine.pdb
+C:\repositories\Druids\Game\Druids.ScriptingEngine\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\repositories\Druids\Game\Druids.ScriptingEngine\obj\x86\Release\Druids.ScriptingEngine.dll
+C:\repositories\Druids\Game\Druids.ScriptingEngine\obj\x86\Release\Druids.ScriptingEngine.pdb
+C:\repositories\Druids\Game\Druids.ScriptingEngine\obj\x86\Release\Druids.ScriptingEngine.csprojResolveAssemblyReference.cache
+C:\repositories_svn\Druids\Game\Druids.ScriptingEngine\bin\x86\Release\Druids.ScriptingEngine.dll
+C:\repositories_svn\Druids\Game\Druids.ScriptingEngine\bin\x86\Release\Druids.ScriptingEngine.pdb
+C:\repositories_svn\Druids\Game\Druids.ScriptingEngine\obj\x86\Release\Druids.ScriptingEngine.csprojResolveAssemblyReference.cache
+C:\repositories_svn\Druids\Game\Druids.ScriptingEngine\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\repositories_svn\Druids\Game\Druids.ScriptingEngine\obj\x86\Release\Druids.ScriptingEngine.dll
+C:\repositories_svn\Druids\Game\Druids.ScriptingEngine\obj\x86\Release\Druids.ScriptingEngine.pdb
